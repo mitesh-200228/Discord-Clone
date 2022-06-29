@@ -1,3 +1,27 @@
 .navbar{
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.logoutButton{
+    background: none;
+    color: #000;
+    /* margin-left: 20px; */
+    height: 25px;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.navRight{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    border-radius: 50%;
+    height: 40px;
+    border: 2px solid #0077ff;
+    object-fit: cover;
+    margin: 0 20px;
 }

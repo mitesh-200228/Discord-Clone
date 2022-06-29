@@ -12,7 +12,7 @@ const twilio = require('twilio')(smsSid, smsAuthToken, {
 // let otp; 
 class OtpService {
     async generateOtp() {
-        const otp = await crypto.randomInt(1000, 9999);
+        const otp = crypto.randomInt(1000, 9999);
         return otp;
     }
     async sendBySms(phone, otp) {
@@ -26,7 +26,7 @@ class OtpService {
 
     }
     async verify(hashedOtp, data) {
-        try {
+        try { 
             const computedHash = await hashService.hashOtp(data);
             console.log(computedHash);
             return computedHash === hashedOtp;

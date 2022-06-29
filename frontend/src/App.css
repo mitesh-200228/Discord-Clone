@@ -47,6 +47,11 @@ body{
     margin: 0 auto;
 }
 
+button{
+    border: none;
+    outline: none;
+}
+
 .cardWrapper{
     display: flex;
     align-items: center;

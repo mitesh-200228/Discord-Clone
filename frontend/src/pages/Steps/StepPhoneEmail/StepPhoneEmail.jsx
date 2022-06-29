@@ -7,7 +7,7 @@ const phoneEmailMap = {
     phone: Phone,
     email: Email
 };
-
+    
 const StepPhoneEmail = ({ onNext }) => {
     const [type, setType] = React.useState('phone');
     const Component = phoneEmailMap[type]

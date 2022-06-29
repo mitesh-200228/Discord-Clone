@@ -6,7 +6,7 @@ const refreshSchema = mongoose.Schema({
         required:true,
     },
     userId:{
-        type: Object,
+        type: String,
         ref: 'User',
     }
 },{
